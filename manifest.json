@@ -1,0 +1,14 @@
+{
+	"name":"Arduino Sensordata Graph TestApp",
+	"description": "Arduino をつかってシリアル通信の値をグラフにするWebアプリ",
+	"version":"1",
+	"manifest_version":2,
+	"app":{
+		"background":{
+			"scripts":["js/background.js"]
+		}
+	},
+	"permissions":[
+	    "serial"
+	]
+}

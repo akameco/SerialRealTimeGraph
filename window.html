@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content = "text/hyml; charset=UTF-8">
+		<title>arduino を使用したグラフ</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="/lib/highcharts.js"></script>
+		<script type="text/javascript" src="/js/serial.js"></script>
+		<script type="text/javascript" src="/js/graph.js"></script>
+		<select id = "ports"></select>
+		<input type="text" id="baud" value="9600" size="5"></input>
+		<input type="button" id="open" value="開始"></input>
+		<input type="button" id="close" value="終了"></input>
+		<input type="button" id="delete" value="削除"></input>
+		<input type="button" id="all_delete" value="全削除"></input>
+
+		<br>
+		<div id ="graph_area" style="width:800px; height:400px"></div>
+		<br>
+		<h4>Arduinoからのあたい</h4>
+		<div>
+			<textarea cols = "60" rows="4" id= "textRead"></textarea>
+			<div>
+				<input type="button" id="clear" value="クリア"></input>
+			</div>
+		</div>
+	</body>
+	</head>
+</html>
